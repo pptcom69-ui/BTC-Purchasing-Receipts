@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Allow text selection and copying across the entire web application */
+body, table, td, th, div, span, p, h1, h2, h3, h4, h5, h6, input, textarea {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+/* Maintain non-selectable behavior on interactive controls only */
+button, input[type="file"], input[type="checkbox"], input[type="radio"] {
+  user-select: none;
+  -webkit-user-select: none;
+}
